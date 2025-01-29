@@ -34,15 +34,13 @@
     gnome-tour
   ];
 
-  environment.systemPackages = with pkgs; [
-    #Gnome tweak tools
-    gnome-tweaks
-    gnomeExtensions.appindicator
-    gnomeExtensions.caffeine
-    gnomeExtensions.gsconnect
-    gnomeExtensions.hot-edge
-    gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.kimpanel
+  environment.systemPackages = with pkgs.gnomeExtensions; [
+    appindicator
+    caffeine
+    gsconnect
+    hot-edge
+    alphabetical-app-grid
+    kimpanel
   ];
 
 }
