@@ -1,0 +1,15 @@
+# Install Home-Manager
+# create flake with home-manager
+sudo nix flake init --template home-manager\#nixos
+
+# change in flake.nix
+# change from unstable to latest stable
+nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+# change hostname = 
+# see what your channel is called
+sudo nix-channel --list
+
+# remove channel because you're going to flake
+sudo nix-channel --remove nixos
+
+# create basic home.nix
