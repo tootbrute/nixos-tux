@@ -2,7 +2,7 @@
 A low powered laptop config. Uses flakes and home-manager module.
 
 ```
-          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖             elias@tux
+          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖             tootbrute@tux
           ▜███▙       ▜███▙  ▟███▛             ---------
            ▜███▙       ▜███▙▟███▛              OS: NixOS 24.11.20250126.4e96537 (Vicuna) x86_64
             ▜███▙       ▜██████▛               Host: HP Pavilion x360 Convertible 11-ad0xx
