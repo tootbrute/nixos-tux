@@ -34,17 +34,8 @@
     gnome-tour
   ];
 
-/*
-  environment.systemPackages = with pkgs; [
-    gnomeExtensions.appindicator
-    gnomeExtensions.caffeine
-    gnomeExtensions.gsconnect
-    gnomeExtensions.hot-edge
-    gnomeExtensions.alphabetical-app-grid
-    gnomeExtensions.kimpanel
-  ];
-
-  home.packages = with pkgs.gnomeExtensions; [
+  # Logout and login again after rebuilding to see changes in GNOME
+  environment.gnome.packages = with pkgs.gnomeExtensions; [
     appindicator
     caffeine
     gsconnect
@@ -53,6 +44,5 @@
     kimpanel
     tailscale-status
   ];
-*/
 
 }
