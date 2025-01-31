@@ -37,6 +37,7 @@
   # Logout and login again after rebuilding to see changes in GNOME
   environment.gnome.packages = with pkgs.gnomeExtensions; [
     appindicator
+    dask-to-dock	
     caffeine
     gsconnect
     hot-edge
