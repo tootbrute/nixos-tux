@@ -4,6 +4,7 @@
   # Auto unlock gnome keyring
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.sddm.enableGnomeKeyring = true;
+  # also need to install pkgs.seahorse, set keyring key to blank password
 
   # Remove default packages from GNOME
   environment.gnome.excludePackages = with  pkgs; [
@@ -43,7 +44,7 @@
     hot-edge
     alphabetical-app-grid
     kimpanel
-    tailscale-status
+    tailscale-qs
   ];
 
 }
