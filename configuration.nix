@@ -7,6 +7,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./mods/base.nix
+      ./mods/gnome.nix
     ];
 
   # Hostname
