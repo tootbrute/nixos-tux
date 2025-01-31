@@ -10,6 +10,13 @@
   home.packages = with pkgs; [
     neovim
     gnome-tweaks
+    gnomeExtensions.appindicator
+    gnomeExtensions.caffeine
+    gnomeExtensions.gsconnect
+    gnomeExtensions.hot-edge
+    gnomeExtensions.alphabetical-app-grid 
+    gnomeExtensions.kimpanel
+    gnomeExtensions.tailscale-status
   ];
 
   # Environment

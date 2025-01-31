@@ -34,6 +34,7 @@
     gnome-tour
   ];
 
+/*
   environment.systemPackages = with pkgs; [
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
@@ -42,5 +43,16 @@
     gnomeExtensions.alphabetical-app-grid
     gnomeExtensions.kimpanel
   ];
+
+  home.packages = with pkgs.gnomeExtensions; [
+    appindicator
+    caffeine
+    gsconnect
+    hot-edge
+    alphabetical-app-grid
+    kimpanel
+    tailscale-status
+  ];
+*/
 
 }
