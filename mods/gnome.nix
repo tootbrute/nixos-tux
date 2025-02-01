@@ -44,6 +44,7 @@
     hot-edge
     alphabetical-app-grid
     kimpanel
+    # TO FIX: tailscale extension isn't installing
     tailscale-qs
   ];
 
