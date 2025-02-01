@@ -109,24 +109,6 @@
   # Enable touchpad support (enabled default in most desktop>
   services.libinput.enable = true;
 
-# NECESSARY?
-/*
-  # Enable sound with pipewire.
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet >
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-*/
-
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "elias";
@@ -164,7 +146,9 @@
 
     # nix helper apps
     nh
-
+    # core apps
+    keepassxc # password client
+    nextcloud-client
 /*
     # core apps
     iotas # nextcloud compatible notes app

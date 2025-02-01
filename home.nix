@@ -8,13 +8,6 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    neovim
-    gnome-tweaks
-
-    # core apps
-    keepassxc # password client
-    nextcloud-client
-
   ];
 
   # Environment
