@@ -8,6 +8,12 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    # core apps
+    nextcloud-client
+    keepassxc
+    iotas
+    obsidian
+
   ];
 
   # Environment

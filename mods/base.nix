@@ -4,17 +4,14 @@
 { pkgs, config, ... }:
 
 {
-/*
-# try without this
   imports =
     [ 
       ./gnome.nix
       ./systemd.nix
       ./fonts.nix
       ./intel-gpu.nix
-      #./neovim-config.nix
     ];
-*/
+
   # Legacy boot - MOVE H
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
@@ -57,7 +54,7 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-  i18n.supportedLocales = [ "en_US.UTF-8" "en_CA.UTF-8/UTF-8" "zh_CN.UTF-8/UTF-8" "zh_TW.UTF-8/UTF-8" ];
+  i18n.supportedLocales = [ "en_US.UTF-8/UTF-8" "en_CA.UTF-8/UTF-8" "zh_CN.UTF-8/UTF-8" "zh_TW.UTF-8/UTF-8" ];
 
   i18n.extraLocaleSettings = {
     # added LANG, LC_ALL, LC_CTYPE, LC_COLLATE, and LC_MESSAGES
@@ -148,9 +145,6 @@
 
     # nix helper apps
     nh
-    # core apps
-    keepassxc # password client
-    nextcloud-client
   ];
 
   # Services

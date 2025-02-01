@@ -1,1 +1,2 @@
-sudo nixos-rebuild switch -v
+sudo nixos-rebuild switch --flake .#
+

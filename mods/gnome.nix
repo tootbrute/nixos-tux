@@ -36,16 +36,14 @@
   ];
 
   # Logout and login again after rebuilding to see changes in GNOME
-  environment.gnome.packages = with pkgs.gnomeExtensions; [
-    appindicator
-    dask-to-dock	
-    caffeine
-    gsconnect
-    hot-edge
-    alphabetical-app-grid
-    kimpanel
-    # TO FIX: tailscale extension isn't installing
-    tailscale-qs
+  environment.systemPackages = with pkgs; [
+    gnomeExtensions.appindicator
+    gnomeExtensions.caffeine
+    gnomeExtensions.gsconnect
+    gnomeExtensions.hot-edge
+    gnomeExtensions.alphabetical-app-grid
+    gnomeExtensions.kimpanel
+    gnomeExtensions.tailscale-qs
   ];
 
 }
