@@ -58,6 +58,13 @@
   i18n.supportedLocales = [ "en_CA.UTF-8/UTF-8" "zh_CN.UTF-8/UTF-8" "zh_TW.UTF-8/UTF-8" ];
 
   i18n.extraLocaleSettings = {
+    # added LANG, LC_ALL, LC_CTYPE, LC_COLLATE, and LC_MESSAGES
+    # to get rid of perl locale error
+    LANGUAGE = "en_US.UTF-8";
+    LC_ALL = "en_US.UTF-8";
+    LC_CTYPE = "en_US.UTF-8";
+    LC_COLLATE = "en_US.UTF-8";
+    LC_MESSAGES = "en_US.UTF-8";
     LC_ADDRESS = "en_US.UTF-8";
     LC_IDENTIFICATION = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
