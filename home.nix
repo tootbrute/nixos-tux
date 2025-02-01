@@ -64,12 +64,12 @@
   };
 
       font = {
-        size = 20;
+        size = 14;
       };
 
       window.dimensions = {
-        lines = 40;
-        columns = 200;
+        lines = 50;
+        columns = 250;
       };
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
