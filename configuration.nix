@@ -8,6 +8,9 @@
       ./hardware-configuration.nix
       ./mods/base.nix
       ./mods/gnome.nix
+      ./mods/fonts.nix
+      ./mods/systemd.nix
+      ./mods/intel-gpu.nix
     ];
 
   # Hostname
@@ -22,7 +25,11 @@
     description = "elias";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  install packages in home-manager
+
+    # core apps, trying to see if it works here
+    keepassxc # password client
+    nextcloud-client
+
     ];
   };
 

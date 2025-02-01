@@ -4,6 +4,8 @@
 { pkgs, config, ... }:
 
 {
+/*
+# try without this
   imports =
     [ 
       ./gnome.nix
@@ -12,7 +14,7 @@
       ./intel-gpu.nix
       #./neovim-config.nix
     ];
-
+*/
   # Legacy boot - MOVE H
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
@@ -149,71 +151,6 @@
     # core apps
     keepassxc # password client
     nextcloud-client
-/*
-    # core apps
-    iotas # nextcloud compatible notes app
-    keepassxc # password client
-    nextcloud-client
-    libreoffice-fresh # word docs
-    hunspell # dictionaries for libreoffice
-    hunspellDicts.en_CA
-    hunspellDicts.en_US
-    xreader # pdf viewer
-
-    # creative apps
-    kdePackages.kdenlive
-    audacity
-    gimp
-    pkgs.krita
-    element-desktop
-
-    #gaming
-    dosbox
-
-    #gpu tools
-    intel-gpu-tools
-    #nvtopPackages.full not working right now
-
-    # archive programs
-    zip
-    xz
-    unzip
-    p7zip
-
-    # utils
-    ripgrep # recursively searches directories for a regex >
-    #jq # A lightweight and flexible command-line JSON proc>
-    #yq-go # yaml processor https://github.com/mikefarah/yq
-    eza # A modern replacement for ‘ls’
-    #fzf # A command-line fuzzy finder
-    nnn # terminal file manager
-
-    # networking tools
-    mtr # A network diagnostic tool
-    iperf3
-    dnsutils  # `dig` + `nslookup`
-    #ldns # replacement of `dig`, it provide the command `drill`
-    #aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    #socat # replacement of openbsd-netcat
-    nmap # A utility for network discovery and security auditing
-    #ipcalc  # it is a calculator for the IPv4/v6 addresses
-
-    # system tools
-    sysstat
-    lm_sensors # for `sensors` command
-    ethtool
-    pciutils # lspci
-    usbutils # lsusb
-
-   # system call monitoring
-    strace # system call monitoring
-    ltrace # library call monitoring
-    lsof # list open files
-
-    iotop # io monitoring
-    iftop # network monitoring
-*/
-
   ];
 
   # Services
