@@ -72,8 +72,8 @@
       };
 
       window.dimensions = {
-        lines = 50;
-        columns = 250;
+        lines = 100;
+        columns = 230;
       };
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
