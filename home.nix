@@ -85,8 +85,21 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
-  };
+/*
+doesn't work
+  # Wallpaper from https://github.com/NixOS/nixos-artwork/
+   "org/gnome/desktop/background" = {
+        "picture-uri" = "/home/elias/.background-image";
+    };
+    "org/gnome/desktop/screensaver" = {
+        "picture-uri" = "/home/elias/.background-image";
+    };
+*/ 
+ };
 
+  /* doesn't work
+  home.file.".background-image".source = ./files/wallpaper.png;
+*/
   gtk = {
     enable = true;
 
