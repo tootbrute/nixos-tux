@@ -87,6 +87,7 @@
     # Wallpaper
     "org/gnome/desktop/background" = {
         "picture-uri" = "/home/elias/.background-image";
+        "picture-uri-dark" = "/home/elias/.background-image";
     };
   };
 
