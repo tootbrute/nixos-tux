@@ -1,14 +1,5 @@
 { config, pkgs, ... }:
-
-let
-  # For GNOME Wallpaper
-  WALLPAPER_IMAGE = ./files/wallpaper.png;
-#  WALLPAPER_IMAGE = pkgs.fetchurl {
-#    url = "file:///home/elias/nixos-config/files/wallpaper.png";
-#    url = "https://github.com/tootbrute/nixos-tux/blob/47a5272ccb29fec1ef028c2b5d6a3c76f3b004cf/files/wallpaper.png";
-    # replace this with the SHA256 hash of the image file
-
-in {
+{
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "elias";
@@ -93,9 +84,9 @@ in {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
-  # Wallpaper originally from https://github.com/NixOS/nixos-artwork/
-  "org/gnome/desktop/background" = {
-        "picture-uri" = "file://${WALLPAPER_IMAGE}";
+    # Wallpaper
+    "org/gnome/desktop/background" = {
+        "picture-uri" = "/home/elias/.background-image";
     };
   };
 
@@ -113,6 +104,11 @@ in {
         gtk-application-prefer-dark-theme=1
       '';
     };
+  };
+
+  # Wallpaper
+  home.file.".background-image" = {
+    source = ./files/wallpaper.png;
   };
 
   programs.bash = {
